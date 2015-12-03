@@ -1,4 +1,4 @@
-# CSCI5828_Lean
+# CSCI5828_DesktopApp
 
 <p>
   <h1><strong>Desktop Applications</strong></h1>
