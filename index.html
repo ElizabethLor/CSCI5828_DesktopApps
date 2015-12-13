@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Desktop Applications</title>
+
+		<meta name="description" content="Lecture 05 for Ken Anderson's Spring 2015 Seminar on Data Engineering">
+		<meta name="author" content="Ken Anderson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+		<style>
+		table {
+		    border-collapse: collapse;
+		}
+
+		table, td, th {
+		    border: 1px solid black;
+		}
+
+		ul {
+			font-size: 10px;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Desktop Applications</h2>
+					<h4>By: Cassiane Cladis and Elizabeth Lor</h4>
+          			<p>CSCI 5828 - Presentation 4</p>
+				</section>
+
+				<section>
+					<h2>Index</h2>
+					<ul>
+						<li>I. History</li>
+						<li>II. What is a Desktop Application?</li>
+						<li>III. Desktop vs Web Application</li>
+						<li>IV. Different Tools/Frameworks for Desktop Applications</li>
+						<li>V. Examples of Desktop Applications</li>
+						<li>VI. Importance to Software Engineering</li>
+						<li>VII. Popular Desktop Apps and Their Online Alternatives</li>
+						<li>VIII. Additional Information</li>
+						<li>IX. Citations</li>
+					</ul>
+				</section>
+
+				<section><h2>I. History</h2></section>
+
+				<section>
+					<h2>History</h2>
+					<ul>
+						<li>IBM introduced a PC hardware platform on August 12, 1981.</li>
+						<ul>
+							<li>The PC used a text mode command-line style operating system known as Microsoft Disk Operating System (MS-DOS).</li>
+							<li>In the 1990's, the MS-DOS was replaced with the graphical Microsoft Windows Operating System.</li>
+						</ul>
+						<center>
+							<figure>
+								<img src="images/MS-DOS.jpg" alt="The Pulpit Rock" height="250">
+								<img src="images/MS-WOS.jpg" alt="The Pulpit Rock" height="250">
+								<figcaption>Microsoft Disk Operating System, Microsoft Windows Operating System</figcaption>
+							</figure>
+						</center>
+					</ul>
+				</section>
+
+				<section>
+					<h2>History Con't</h2>
+					<ul>
+						<li>In 1991 and 1993, changes occurred that affected the world a great deal.</li>
+						<ul>
+							<li>The World Wide Web (WWW) gained popularity and traction in 1991.</li>
+							<li>The Mosaic web browser application was announced in 1993.</li>
+						</ul>
+						<center>
+							<figure>
+								<img src="images/WWW.png" alt="The Pulpit Rock" height="250">
+								<img src="images/Mosaic.jpg" alt="The Pulpit Rock" height="250">
+								<figcaption>World Wide Web, Mosaic Web Browser</figcaption>
+							</figure>
+						</center>
+					</ul>
+				</section>
+
+				<section>
+					<h2>History Con't</h2>
+					<ul>
+						<li>Early applications were developed to be run from mainframe computers and accessed via low-tech terminal devices.</li>
+						<ul><li>However, the increased power and availability of powerful desktop computers ushered in an era of standalone desktop applications that were run locally on the PC.</li>
+						<li>Additionally, the graphical user interface (GUI) was also making great strides in terms of accessibility and popularity.
+					</ul></ul>
+				</section>
+
+				<section><h2>II. What is a Desktop Application?</h2></section>
+
+				<section>
+					<h2>What is a Desktop Application?</h2>
+					<ul>
+						<li>To start off, an application is a type of software that allows the users to perform specific tasks.</li>
+						<li>According to PC Magazine, a desktop application is "an application that runs stand alone in a desktop or laptop computer", which is contrasted with a "web-based application, which requires the Web browser to run".</li>
+						<li>Desktop applications run on desktop platforms whereas mobile applications run on smartphones and tablets.</li>
+						<li>When a desktop application is opened, it runs inside the operating system until the user close it.</li>
+						<li>More than one application can be open at the same time.</li>
+						<ul>
+							<li>This process is called multitasking.</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is a Desktop Application? Con't</h2>
+					<ul>
+						<li>There are many desktop applications which fall into many different categories.</li>
+						<li>Two of the categories are full-featured like Microsoft Word and "One or Two Things" like gadgets.</li>
+						<li>A few types of desktop applications the users might use are:</li>
+						<ul>
+							<li>Word Processors: Microsoft Word</li>
+							<li>Personal Finance: Quicken</li>
+							<li>Web Browsers Internet Explore, Firefox, Google Chrome, Safari</li>
+							<li>Games: Solitaire</li>
+							<li>Media Players: Windows Media Player/iTunes</li>
+							<li>Gadgets/Widgets: Calendars, Calculators, Maps</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section><h2>III. Desktop vs. Web Application</h2></section>
+
+				<section>
+					<h2>Desktop vs. Web Application</h2>
+					<ul>
+						<li>StreetDirectory.com writes, "software application development began with desktop applications, which could be used on standalone machines only."</li>
+						<li>Due to portability and better functions from usability point of view, web applications began to replace desktop applications.</li>
+						<li>Web applications development "is usually made on client server architecture and use a web browser as the client interface."</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Application Con't</h2>
+					<table border="1" style=:"width:100%">
+						<tr>
+							<th><center>Features</center></th>
+							<th><center>Desktop Applications</center></th>
+							<th><center>Web Application</center></th>
+						</tr>
+						<tr>
+							<td><center>Rapid Development</center></td>
+							<td><center>Designed to be a quick and easy solution to building graphical user interfaces (GUIs)</center></td>
+							<td><center>Was never designed for rapid development. The "correct" way to create websites is using MVC (model, view, control)</center></td>
+						</tr>
+						<tr>
+							<td><center>Security</center></td>
+							<td><center>The program is running on the user's desktop; therefore this makes it harder for hackers to gain access to people's data</center></td>
+							<td><center>All of the user's data is stored online, taking just "one" hack to compromise "all" of the user(s) data</center></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Application Con't</h2>
+					<table border="1" style=:"width:100%">
+						<tr>
+							<th><center>Features</center></th>
+							<th><center>Desktop Applications</center></th>
+							<th><center>Web Application</center></th>
+						</tr>
+						<tr>
+							<td><center>Available Controls</center></td>
+							<td><center>There are a whole buffet of user interactive controls to choose from</center></td>
+							<td><center>No real controls except for the exception of HTML</center></td>
+						</tr>
+						<tr>
+							<td><center>Flexibility</center></td>
+							<td><center>Easy to write desktop applications that takes advantage of the user's hardware</center></td>
+							<td><center>Does not compare to the flexibility of desktop applications. Just stick with desktop application for your program</center></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Application Con't</h2>
+					<table border="1" style=:"width:100%">
+						<tr>
+							<th><center>Features</center></th>
+							<th><center>Desktop Applications</center></th>
+							<th><center>Web Application</center></th>
+						</tr>
+						<tr>
+							<td><center>Portability</center></td>
+							<td><center>Can be portable, but most are "not" and require manual installation from the user</center></td>
+							<td><center>Are "very" portable and will work with just about any computer with a decent web browser</center></td>
+						</tr>
+						<tr>
+							<td><center>Maintenance</center></td>
+							<td><center>Usually need to be manually updated to install updates</center></td>
+							<td><center>All updates are taken care of by the web application administrator(s) who updates the web application on the server(s)</center></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Application Con't</h2>
+					<table border="1" style=:"width:100%">
+						<tr>
+							<th><center>Features</center></th>
+							<th><center>Desktop Applications</center></th>
+							<th><center>Web Application</center></th>
+						</tr>
+						<tr>
+							<td><center>Privacy</center></td>
+							<td><center>Cracks and keygens are a common problem for desktop software vendors</center></td>
+							<td><center>Easier to protect against privacy with web applications and constantly update security</center></td>
+						</tr>
+						<tr>
+							<td><center>Payments</center></td>
+							<td><center>Up-front payments get all money right away which can improve cash flow</center></td>
+							<td><center>Often subscription based payments get a more predictable monthly income and potentially can increase revenue from customers</center></td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Application Con't</h2>
+					<table border="1" style=:"width:100%">
+						<tr>
+							<th><center>Features</center></th>
+							<th><center>Desktop Applications</center></th>
+							<th><center>Web Application</center></th>
+						</tr>
+						<tr>
+							<td><center>Psychological</center></td>
+							<td><center>Customers are more willing to pay for desktop software - could be a question of ownership</center></td>
+							<td><center>Many users feel that web-based software and programs should be free</center></td>
+						</tr>
+						<tr>
+							<td><center>Availability</center></td>
+							<td><center>Desktop applications are locally installed and are always available</center></td>
+							<td><center>Web applications are dependent on an up and running server and an Internet connection</center></td>
+						</tr>
+
+					</table>
+				</section>
+
+				<section>
+					<h2>Desktop vs. Web Applications Con't</h2>
+					<ul>
+						<li>Overall, deciding between web and desktop applications is now best determined by the project itself.</li>
+						<li>Both platforms have pros and cons but there is room for both at the table.</li>
+						<li>The line between desktop and web applications are becoming more blurred.</li>
+							<ul>
+								<li>Many desktop applications now use web protocols and embed web browsers.</li>
+							</ul>
+						<li>"Reports of the death of desktop software have been greatly exaggerated. Long-term trends have slights changed the balance in favor of the web apps for some types of products." -Andy Brice</li>
+					</ul>
+				</section>
+
+				<section><h2>IV. Different Tools/Frameworks for Desktop Applications</h2></section>
+
+				<section>
+					<h2>Mac Tools/Framework: XCode</h2>
+					<center><img height="400" src="images/xcode.png"></center>
+				</section>
+
+				<section>
+					<h2>XCode</h2>
+					<ul>
+						<li>XCode was released in 2003.</li>
+						<li>It is an integrated development environment (IDE).</li>
+						<li>It contains a suit of software development tools developed by Apple for developing software for OS X and iOS.</li>
+						<li>Tightly integrated with Cocoa and Cocoa Touch frameworks.</li>
+						<li>XCode supports:</li>
+						<ul>
+							<li>C/C++/Objective-C/Objective-C++</li>
+							<li>Java</li>
+							<li>AppleScript</li>
+							<li>Python</li>
+							<li>Ruby</li>
+							<li>Rez</li>
+							<li>Swift</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>XCode Con't</h2>
+					<ul>
+						<li>XCode has evolved from a programming language to a fully integrated interface</li>
+						<li>Now on the Apple website the XCode interface boasts:</li>
+							<ul>
+								<li>Assistant Editor: Splits the Xcode editor in two with code on left and the interface on the right</li>
+								<li>Jump Bar: Select what information to view in the Assistant editor</li>
+								<li>Interface Builder: The design canvas makes it simple to prototype a full user interface without writing code. Laying out windows, buttons, and sliders.</li>
+								<li>Version Editor and Source Control: Compare two versions of the file</li>
+								<li>Testing: Instant feedback to execute individual tests or group tests. </li>
+							</ul>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Mac Tools/Framework: Cocoa Framework</h2>
+					<center><img height="350" src="images/Cocoa Framework 2.png"></center>
+				</section>
+
+				<section>
+					<h2>Cocoa Framework</h2>
+					<ul>
+						<li>Apple's native object-oriented application programming interface (API) for the OS X operating system.</li>
+						<li>It consists of the Foundation Kit, Application Kit and Core Data frameworks.</li>
+						<li>Apple provides development tools such as Xcode and Interface Builder to help Cocoa Frameworks develop applications.</li>
+						<li>Fun Fact: The framework was called "KidSim" before it was renamed to Cocoa.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Cocoa Framework Con't</h2>
+					<ul>
+						<li>Cocoa and Swift</li>
+							<ul>
+								<li>While Cooca and Cocoa Touch still have a strong following, the release of Swift has led some developers to wonder about the future</li>
+								<li>The NS Hipster wrote that, "After just a few months of working with Swift, Cocoa has begun to lose its luster...Swift is designed with modern language features that allow for safer, more performance code." </li>
+							</ul>
+						<li>Cocoa and Cocoa Touch are based on Objective-C but the arrival of Swift might just be the beginning of the end for Objective-C. (As the NS Hipster points out, remember Carbon?)</li>	
+					</ul>
+				</section>
+
+				<section>
+					<h2>Windows Tools/Framework: Visual Studio</h2>
+					<center><img height="400" src="images/visualstudio.png"></center>
+				</section>
+
+				<section>
+					<h2>Visual Studio</h2>
+					<ul>
+						<li>It's an integrated development environment (IDE) from Microsoft.</li>
+						<li>Microsoft Windows uses this tool to develop computer programs as well as web sites, web applications and web services.</li>
+						<li>Microsoft software development platforms that are being used are:</li>
+						<ul>
+							<li>Windows API</li>
+							<li>Windows Forms</li>
+							<li>Windows Presentation Foundation</li>
+							<li>Windows Store</li>
+							<li>Microsoft Silverlight</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Windows Tools/Framework: .NET</h2>
+					<center><img height="400" src="images/net.jpg"></center>
+				</section>
+
+				<section>
+					<h2>.NET</h2>
+					<ul>
+						<li>This framework is a "runnable execution environment that manages applications that targets the .NET Framework".</li>
+						<li>Programmers can take advantage of robust, reliable code for all major areas of application development through the common language runtime</li>
+						<li>There are two major components:</li>
+						<ul>
+							<li>Common Language Runtime (CLR): execution engine that handles the running application</li>
+							<li>.NET Framework Class Library: developers can call from their own application using the library of tested and reusable code</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>.NET Con't</h2>
+					<ul>
+						<li>Services that .NET Framework provides:</li>
+						<ul>
+							<li>Memory Management</li>
+							<ul>
+								<li>CLR are responsible for allocating and releasing memory and for handling object lifetimes</li>
+							</ul>
+							<li>Common Type System</li>
+							<ul>
+								<li>Common to all languages that target the .NET Framework Class Library</li>
+							</ul>
+							<li>Development Framework and Technologies</li>
+							<ul>
+								<li>Libraries for specific areas of application development such as ASP.NET for web application, ADO.NET for data access and Windows Communication Foundation for service oriented applications</li>
+							</ul>
+							<li>Language Interoperability</li>
+							<ul>
+								<li>Routines written in one language are accessible to other languages which enables programmers to focus on creating applications in their preferred language or languages</li>
+							</ul>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>.NET Con't</h2>
+					<ul>
+						<li>Services that .NET Framework provides:</li>
+						<ul>
+							<li>Version Compatibility</li>
+							<ul>
+								<li>Applications that are developed using a particular version of the .NET Framework that can run without modification on a later version</li>
+							</ul>
+							<li>Side By Side Execution</li>
+							<ul>
+								<li>Allow multiple versions of the common language runtime to exist on the same computer meaning that multiple versions of applications can coexist and run on the version of the .NET Framework with which it was built</li>
+							</ul>
+							<li>Multitargeting</li>
+							<ul>
+								<li>Developers can create assemblies that work on multiple .NET Framework platforms such as Windows 7 - Windows 10, Windows Phone and Xbox 360</li>
+							</ul>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>V. Examples of Desktop Applications</h2>
+				</section>
+
+				<section>
+					<h2>Microsoft Office</h2>
+					<ul>
+						<li>Developed by Microsoft, it contains an office suite of applications, servers and services.</li>
+						<li>It was developed on August 1, 1988 by Bill Gates.</li>
+						<li>Microsoft Office contains sets of applications such as: Microsoft Word, Microsoft Excel, and Microsoft PowerPoint.</li>
+						<li>This desktop application is available for both Windows and OS X.</li>
+						<ul>
+							<li>Through out the years, Microsoft Office has branched out to mobile versions and web-based versions.</li>
+						</ul>
+						<li><a href="http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?tduid=(3c9b1f2a1b21b140a3e573cf3aaba9b4)(256380)(2459594)(8hJTXlwH.xk-viwJYBy4rCmZbMTVIcJwLg)()" target="_blank">Download Microsoft Office</a></li>
+						<center><img height="250" src="images/MSOffice.jpg"></center>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Adobe Photoshop CS3</h2>
+					<ul>
+						<li>"The world's best digital imaging software".</li>
+						<li>Photoshop is a raster graphics editor.</li>
+						<li>Developed and published by Adobe Systems for Windows and OS X.</li>
+						<li>It was created by Thomas and John Knoll in 1988.</li>
+						<li>This application is used to create and manipulate images.</li>
+						<li>Features of photoshop can be expanded by using Photoshop plug-ins.</li>
+						<li>In 2013, Adobe switched Photoshop from a desktop-based application to web-based services.</li>
+						<ul>
+							<li>This switch meant that monthly updates are possible instead of large rollouts and universal access to files.</li>
+						</ul>
+						<li><a href="http://www.photoshop.com/products" target="_blank">Download Adobe Photoshop Products</a></li>
+						<center><img height="200" src="images/photoshop.jpg"></center>
+					</ul>
+				</section>
+
+				<section>
+					<h2>VI. Importance to Software Engineering</h2>
+				</section>
+
+				<section>
+					<h2>Importance to Software Engineering</h2>
+					<ul>
+						<li>Desktop application development is important to software engineering because of the functionality and importance of desktop applications.</li>
+						<li>Desktop applications mean that engineers need to be focused on the users.</li>
+							<ul>
+								<li>Since the 1990s computers have become more user-friendly with more intuitive GUIs.</li>
+								<li>Most users interact with their computers through applications instead of on or through the command line.</li>
+								<li>In order for many users to work with computers, they need desktop applications.</li>
+							</ul>
+						</ul>
+				</section>
+
+				<section>
+					<h2>Importance to Software Engineering Con't</h2>
+					<ul><li>Desktop applications are still vital for PC users</li>
+							<ul>
+								<li>Browser applications such as Chrome and Firefox, make browsing the Internet possible for users who are unfamiliar with programmatic web.</li>
+								<li>Desktop applications such as Excel are used widely for computing, data entry, and storage.</li>
+								<li>Functions that are associated with using computers and technology are primarily desktop application interactions</li>
+							</ul>
+						<li>Particularly for software engineers and others doing high powered computing, the power and functionality of desktop applications are crucial.</li>
+				</ul>
+				</section>
+
+				<section>
+					<h2>Importance to Software Engineering Con't</h2>
+					<ul>
+						<li>In an interview Josh Marinacci, a prominent open-source engineer, said that for both security and power reasons he believes that installed software will always be around.</li>
+						<li>Successful applications in the future need to be a hybrid of the both but there will always be a place for desktop application engineers</li>
+							<ul>
+								<li>However, these future engineers will need to broaden their scope and be able to design with web and desktop tools</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>VII. Popular Desktop Apps and Their Online Alternatives</h2>
+				</section>
+
+				<section>
+					<h2>Popular Desktop Apps and Their Online Alternatives</h2>
+					<ul>
+						<table border="1" style=:"width:100%">
+							<tr>
+								<th><center>Application</center></th>
+								<th><center>Online Alternative</center></th>
+								<th><center>Description</center></th>
+							</tr>
+							<tr>
+								<td><center>Microsoft Office 2007</center></td>
+								<td><center>Google Docs</center></td>
+								<td><center>Google Docs can create the same applications for creating word documents, spreadsheets and presentations as Microsoft Office</center></td>
+							</tr>
+							<tr>
+								<td><center>Adobe Photoshop CS3</center></td>
+								<td><center>Pixlr</center></td>
+								<td><center>Pixlr is an online photo image editing application that contains similar editing tools found in Photoshop CS3</center></td>
+							</tr>
+							<tr>
+								<td><center>Microsoft Visio 2007</center></td>
+								<td><center>Gliffy</center></td>
+								<td><center>Gliffy has the functionalities to create and share flow charts, complex diagrams or technical drawings</center></td>
+							</tr>
+							<tr>
+								<td><center>Adobe Acrobat 8.1</center></td>
+								<td><center>PDF Converter Facebook Apps</center></td>
+								<td><center>PDF Converter Facebook Apps can create PDF from a variety of formats for free on Facebook simply by uploading your file</center></td>
+							</tr>
+						</table>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Popular Desktop Apps and Their Online Alternatives Con't</h2>
+					<ul>
+						<table border="1" style=:"width:100%">
+							<tr>
+								<th><center>Application</center></th>
+								<th><center>Online Alternative</center></th>
+								<th><center>Description</center></th>
+							</tr>
+							<tr>
+								<td><center>Apple 1 Password Manager and Form Filler 2.5.7</center></td>
+								<td><center>Clipperz</center></td>
+								<td><center>Clipperz allows you to create direct log in links for your online accounts.</center></td>
+							</tr>
+							<tr>
+								<td><center>Apple Aperture 1.5</center></td>
+								<td><center>Flickr</center></td>
+								<td><center>Flickr is an online photo management and sharing site</center></td>
+							</tr>
+							<tr>
+								<td><center>Microsoft Office Outlook 2007</center></td>
+								<td><center>Gmail</center></td>
+								<td><center>Gmail accounts have many space, instant messaging, built in search technology and no banner ads</center></td>
+							</tr>
+							<tr>
+								<td><center>Vista</center></td>
+								<td><center>YouOS</center></td>
+								<td><center>YouOS is a virtual OS that allows users to customize without the hefty price or desktop trappings</center></td>
+							</tr>
+						</table>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Popular Desktop Apps and Their Online Alternatives Con't</h2>
+					<ul>
+						<table border="1" style=:"width:100%">
+							<tr>
+								<th><center>Application</center></th>
+								<th><center>Online Alternative</center></th>
+								<th><center>Description</center></th>
+							</tr>
+							<tr>
+								<td><center>Adobe Dreamweaver CS3Adobe Flash CS3 Professional</center></td>
+								<td><center>App2you</center></td>
+								<td><center>App2you is a web service that allows users to own simple web application without any coding or web designing experience</center></td>
+							</tr>
+							<tr>
+								<td><center>Desktop Calculators</center></td>
+								<td><center>InstaCalc</center></td>
+								<td><center>InstaCalc is an advance web based calculator</center></td>
+							</tr>
+							<tr>
+								<td><center>MS OutlookHP Fax MachinePrinting Paper</center></td>
+								<td><center>FaxZERO</center></td>
+								<td><center>FaxZERO is an internet faxing service which allows users to send digital documents within Canada and the US for free</center></td>
+							</tr>
+						</table>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Popular Desktop Apps and Their Online Alternatives Con't</h2>
+					<ul>
+						<table border="1" style=:"width:100%">
+							<tr>
+								<th><center>Application</center></th>
+								<th><center>Online Alternative</center></th>
+								<th><center>Description</center></th>
+							</tr>
+							<tr>
+								<td><center>SharpReader (Windows) / NetNew Wire (Mac OS X) / Straw (Linux)</center></td>
+								<td><center>Netvibes</center></td>
+								<td><center>Netvibes is a RSS reader and web home page</center></td>
+							</tr>
+							<tr>
+								<td><center>Website Analysis Software</center></td>
+								<td><center>Google Analytics</center></td>
+								<td><center>Google Analytics is an online tool that allows users to keep track of their website and how it is being accessed</center></td>
+							</tr>
+							<tr>
+								<td><center>MSN MessengerGoogle Talk ICQAIM JabberYahoo!</center></td>
+								<td><center>Meebo</center></td>
+								<td><center>Meebo is a web portal for instant messaging that allows users to chat online without having to download anything</center></td>
+							</tr>
+						</table>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Popular Desktop Apps and Their Online Alternatives Con't</h2>
+					<ul>
+						<table border="1" style=:"width:100%">
+							<tr>
+								<th><center>Application</center></th>
+								<th><center>Online Alternative</center></th>
+								<th><center>Description</center></th>
+							</tr>
+							<tr>
+								<td><center>All Desktop Tools</center></td>
+								<td><center>Sosius</center></td>
+								<td><center>Sosius has the essential desktop tools online from the calendar to file management, to file management and many more</center></td>
+							</tr>
+							<tr>
+								<td><center>Desktop Task Lists</center></td>
+								<td><center>Remember The Milk</center></td>
+								<td><center>Remember the Milk is an online to-do list that provides users with easy access to reminders and notes</center></td>
+							</tr>
+							<tr>
+								<td><center>Microsoft OneNote 2007</center></td>
+								<td><center>Note.ly</center></td>
+								<td><center>Note.ly is an online alternative to create notes directly in your browser</center></td>
+							</tr>
+						</table>
+					</ul>
+				</section>
+
+				<section>
+					<h2>VIII. Additional Information</h2>
+				</section>
+
+				<section>
+					<h2>Downloads for Tools/Frameworks</h2>
+					<ul>
+						<ul>
+							<li><a href="https://developer.apple.com/xcode/download/" target="_blank">Mac XCode</a></li>
+							<li><a href="https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx" target="_blank">Visual Studio</a></li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>IX. Citations</h2>
+				</section>
+
+				<section>
+					<h2>Citations</h2>
+					<ul>
+						<li>Bychkov, Dmitriy. "Desktop vs. Web Applications: A Deeper Look and Comparison." Segue Technologies. 7 June 2013. Web. 7 Dec. 2015. "http://www.seguetech.com/blog/2013/06/07/desktop-vs-web-applications-deeper-comparison".</li>
+						<li>Smith, Jeff. "Desktop Applications Vs. Web Applications." Streetdirectory.com. Web. 7 Dec. 2015. "http://www.streetdirectory.com/travel_guide/114448/programming/ desktop_applications_vs_web_applications.html".</li>
+						<li>"Pros and Cons to Web and Desktop Applications." The Lagoon Tech. 4 Aug. 2015. Web. 7 Dec. 2015. "http://blog.computerlagoon.com/2015/08/04/pros-and-cons-to-web-and-desktop-applications/".</li>
+						<li>"Xcode." Wikipedia. Wikimedia Foundation, 5 Dec. 2015. Web. 7 Dec. 2015. "https://en.wikipedia.org/wiki/Xcode".</li>
+						<li>"Computer Basics: Understanding Applications." GCFLearnFree.org. Goodwill Community Foundation, Inc. Web. 13 Dec. 2015. "http://www.gcflearnfree.org/computerbasics/3".</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Citations Con't</h2>
+					<ul>
+						<li>"Xcode." Apple Developer. Web. 7 Dec. 2015. "https://developer.apple.com/xcode/ide/".</li>
+						<li>"Microsoft Visual Studio." Wikipedia. Wikimedia Foundation, 4 Dec. 2015. Web. 8 Dec. 2015. "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio".</li>
+						<li>"Getting Started with the .NET Framework." Microsoft. Web. 8 Dec. 2015. "https://msdn.microsoft.com/library/hh425099(v=vs.110).aspx".</li>
+						<li>"Popular Desktop Apps And Their Online Alternatives." PDF Blog. 18 Dec. 2007. Web. 8 Dec. 2015. "http://www.investintech.com/resources/blog/archives/78-popular-desktop-apps-and-their-online-alternatives.html".</li>
+						<li>"Adobe Photoshop." Wikipedia. Wikimedia Foundation, 9 Dec. 2015. Web. 10 Dec. 2015. "https://en.wikipedia.org/wiki/Adobe_Photoshop".</li>
+						<li>Dachis, Adam. "What Photoshop's Move to the Cloud Actually Means for You." Lifehacker. 7 May 2013. Web. 10 Dec. 2015. "http://lifehacker.com/what-photoshops-move-to-the-cloud-actually-means-for-y-494225482".</li>
+						<li>"Microsoft Office." Wikipedia. Wikimedia Foundation, 6 Dec. 2015. Web. 10 Dec. 2015. "https://en.wikipedia.org/wiki/Microsoft_Office".</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Thank you for a great semester!</h2>
+					<img height="300" src="images/thankyou.gif"></a>
+				</section> 
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
